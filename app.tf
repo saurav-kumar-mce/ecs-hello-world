@@ -113,7 +113,7 @@ resource "aws_ecs_task_definition" "hello_world" {
   container_definitions = <<DEFINITION
 [
   {
-    "image": "872393502527.dkr.ecr.ap-northeast-1.amazonaws.com/workshop:latest",
+    "image": "registry.gitlab.com/architect-io/artifacts/nodejs-hello-world:latest",
     "cpu": 1024,
     "memory": 2048,
     "name": "hello-world-app",
